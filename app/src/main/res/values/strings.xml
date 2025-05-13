@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">intro kotlin903</string>
+    <string name="escribe_tu_nombre" />
 </resources>
