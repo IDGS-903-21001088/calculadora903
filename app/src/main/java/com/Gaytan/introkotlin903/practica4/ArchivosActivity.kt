@@ -1,4 +1,4 @@
-package com.Gaytan.introkotlin903
+package com.Gaytan.introkotlin903.practica4
 
 
 import android.os.Bundle
@@ -17,7 +17,7 @@ import java.lang.Exception
 class archivosActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        enableEdgeToEdge()
         setContentView(R.layout.activity_archivos)
         val btnGuardar = findViewById<Button>(R.id.saveButton)
         val btnLeer = findViewById<Button>(R.id.readButton)
@@ -57,4 +57,5 @@ class archivosActivity : AppCompatActivity() {
             insets
         }
     }
-}
+
+

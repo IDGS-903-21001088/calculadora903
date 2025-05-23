@@ -1,90 +1,48 @@
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".practica2.OperasActivity">
+    android:layout_margin="16dp"
+    android:orientation="vertical"
 
-    <EditText
-        android:id="@+id/edt1"
-        android:layout_width="222dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="40dp"
-        android:ems="10"
-        android:hint="Numero 1"
-        android:inputType="numberDecimal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".MenuActivity2">
 
-    <EditText
-        android:id="@+id/edt2"
-        android:layout_width="222dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="40dp"
-        android:ems="10"
-        android:hint="Numero 2"
-        android:inputType="numberDecimal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt1" />
-
-    <RadioGroup
-        android:id="@+id/Grupo1"
-        android:layout_width="216dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt2">
-
-        <RadioButton
-            android:id="@+id/r1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="Sumar" />
-
-        <RadioButton
-            android:id="@+id/r2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Restar" />
-
-        <RadioButton
-            android:id="@+id/r3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Multiplicar" />
-
-        <RadioButton
-            android:id="@+id/r4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Dividir" />
-    </RadioGroup>
 
     <Button
-        android:id="@+id/btn1"
-        android:layout_width="wrap_content"
+        android:id="@+id/button"
+        android:layout_width="365dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="20dp"
-        android:onClick="calcular"
-        android:text="CALCULAR"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Grupo1" />
+        android:text="Ejemplo1"
+        app:layout_constraintTop_toTopOf="parent"
 
-    <TextView
-        android:id="@+id/tv1"
-        android:layout_width="231dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="32dp"
-        android:text="Resultado: 0"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn1" />
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:text="Operas" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:text="Cinepolis" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:text="Ejemplo 4" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:text="Archivos" />
+
+
+</LinearLayout>
